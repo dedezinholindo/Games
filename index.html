@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa do dedezinho</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>O mágico dos números</h1>
+    </header>
+    <div id="ordem">
+        <h3>Pense em um número!</h3>
+    </div>
+    <input id="ok" type="button" value="OK!" onclick="clicar()">
+    <input id="help" type="button" value="Ajuda" onmouseover="mostrar_texto()" onclick="calculadora()" onmouseout="sumir()">
+    <div id="texto"></div>
+    <div id="calculadora">
+        <input id="num1" type='number'>
+        <input id="num2" type='number'>
+        <br>
+        <input id="somar" class="operador" value="+" type="submit" onclick="somar()">
+        <input id="subtrair" class="operador" value="-" type="submit" onclick="subtrair()">
+        <input id="dividir" class="operador" value="/" type="submit" onclick="dividir()">
+        <input id="mult" class="operador" value="x" type="submit" onclick="mult()">
+    </div>
+</body>
+
+</html>
